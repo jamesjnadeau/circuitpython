@@ -75,6 +75,7 @@ void board_init(void) {
     fourwire_fourwire_obj_t *bus = &allocate_display_bus()->fourwire_bus;
     bus->base.type = &fourwire_fourwire_type;
 
+    // see here for inspiration: https://github.com/m5stack/M5GFX/blob/33d7d3135e816a86a008fae8ab3757938cee95d2/src/M5GFX.cpp#L1350
     common_hal_fourwire_fourwire_construct(
         bus,
         spi,

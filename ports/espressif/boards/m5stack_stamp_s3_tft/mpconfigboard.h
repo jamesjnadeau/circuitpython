@@ -37,14 +37,14 @@
 #define DEFAULT_I2C_BUS_SCL (&pin_GPIO41)
 #define DEFAULT_I2C_BUS_SDA (&pin_GPIO42)
 
-// sd
+// sd - do not use here, causes tft to stop working
 // #define DEFAULT_SPI_BUS_SCK (&pin_GPIO40)
 // #define DEFAULT_SPI_BUS_MOSI (&pin_GPIO14)
 // #define DEFAULT_SPI_BUS_MISO (&pin_GPIO39)
 // orig
 #define DEFAULT_SPI_BUS_SCK (&pin_GPIO36)
 #define DEFAULT_SPI_BUS_MOSI (&pin_GPIO35)
-#define DEFAULT_SPI_BUS_MISO (&pin_GPIO39)
+#define DEFAULT_SPI_BUS_MISO (&pin_GPIO34)
 
 #define DEFAULT_UART_BUS_RX (&pin_GPIO44)
 #define DEFAULT_UART_BUS_TX (&pin_GPIO43)
