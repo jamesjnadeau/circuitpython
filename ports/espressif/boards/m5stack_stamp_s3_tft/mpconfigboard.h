@@ -26,7 +26,7 @@
 
 // Micropython setup
 
-#define MICROPY_HW_BOARD_NAME       "M5 Stamp ESP32-S3 TFT"
+#define MICROPY_HW_BOARD_NAME       "M5 Stack Stamp S3 TFT"
 #define MICROPY_HW_MCU_NAME         "ESP32S3"
 
 #define MICROPY_HW_NEOPIXEL (&pin_GPIO21)
@@ -34,17 +34,22 @@
 
 // #define MICROPY_HW_LED_STATUS (&pin_GPIO13)
 
-#define DEFAULT_I2C_BUS_SCL (&pin_GPIO13)
-#define DEFAULT_I2C_BUS_SDA (&pin_GPIO15)
+#define DEFAULT_I2C_BUS_SCL (&pin_GPIO41)
+#define DEFAULT_I2C_BUS_SDA (&pin_GPIO42)
 
-// SD Card
-#define DEFAULT_SPI_BUS_SCK (&pin_GPIO40)
-#define DEFAULT_SPI_BUS_MOSI (&pin_GPIO14)
+// sd
+// #define DEFAULT_SPI_BUS_SCK (&pin_GPIO40)
+// #define DEFAULT_SPI_BUS_MOSI (&pin_GPIO14)
+// #define DEFAULT_SPI_BUS_MISO (&pin_GPIO39)
+// orig
+#define DEFAULT_SPI_BUS_SCK (&pin_GPIO36)
+#define DEFAULT_SPI_BUS_MOSI (&pin_GPIO35)
 #define DEFAULT_SPI_BUS_MISO (&pin_GPIO39)
 
-// UART
 #define DEFAULT_UART_BUS_RX (&pin_GPIO44)
 #define DEFAULT_UART_BUS_TX (&pin_GPIO43)
+// orig
+// #define DEFAULT_UART_BUS_RX (&pin_GPIO2)
+// #define DEFAULT_UART_BUS_TX (&pin_GPIO1)
 
-// doesn't have this?
 // #define DOUBLE_TAP_PIN (&pin_GPIO38)
